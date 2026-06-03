@@ -17,7 +17,10 @@ guard let keyId = env["ASC_KEY_ID"], let issuer = env["ASC_ISSUER"], let keyPath
 let args = CommandLine.arguments
 let method = args.count > 1 ? args[1] : "GET"
 let path = args.count > 2 ? args[2] : "/v1/apps"
-let body = args.count > 3 ? args[3] : nil
+var body = args.count > 3 ? args[3] : nil
+if let b = body, b.hasPrefix("@") {   // @path → read JSON body from file
+    body = try? String(contentsOfFile: String(b.dropFirst()), encoding: .utf8)
+}
 
 let pem = try String(contentsOfFile: keyPath, encoding: .utf8)
 let key = try P256.Signing.PrivateKey(pemRepresentation: pem)

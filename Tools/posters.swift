@@ -9,13 +9,14 @@ let orange = NSColor(srgbRed: 0xED/255, green: 0x5B/255, blue: 0x22/255, alpha: 
 let dir = "/Users/duolaameng/Desktop/applestore/15_Garagely/brand"
 
 struct Poster { let shot: String; let out: String; let head: String; let sub: String }
+// Order = strongest download hooks first (search shows the first 2–3).
 let posters = [
-    Poster(shot: "s_garage",    out: "poster_1", head: "Every vehicle.\nOne garage.",       sub: "Service, fuel & EV charging — all in one place."),
-    Poster(shot: "s_reminders", out: "poster_2", head: "Reminders that\nactually fire.",     sub: "By date or mileage — Garagely predicts when."),
-    Poster(shot: "s_costs",     out: "poster_3", head: "Know what your\ncar really costs.",  sub: "Fuel, charging, service & expenses in one number."),
-    Poster(shot: "s_ev",        out: "poster_4", head: "Built for EVs,\ntoo.",               sub: "kWh, mi/kWh, home vs public, battery health."),
-    Poster(shot: "s_add",       out: "poster_5", head: "Log it in\nseconds.",                sub: "Photos, receipts and smart prefill."),
-    Poster(shot: "s_paywall",   out: "poster_6", head: "No account.\nNo subscription.",      sub: "Pay once · $5.99 · your data stays yours."),
+    Poster(shot: "s_reminders", out: "poster_1", head: "Never miss an\noil change.",      sub: "Reminders by date or mileage — fired in time."),
+    Poster(shot: "s_costs",     out: "poster_2", head: "Know what your\ncar costs.",       sub: "Fuel, charging, service & expenses in one number."),
+    Poster(shot: "s_paywall",   out: "poster_3", head: "No account.\nNo subscription.",    sub: "Pay once · $5.99 · your data stays yours."),
+    Poster(shot: "s_garage",    out: "poster_4", head: "All your cars,\none garage.",      sub: "Every vehicle's upkeep, in one place."),
+    Poster(shot: "s_ev",        out: "poster_5", head: "Built for EVs,\ntoo.",             sub: "kWh, mi/kWh, home vs public, battery health."),
+    Poster(shot: "s_add",       out: "poster_6", head: "Log service\nin seconds.",         sub: "Photos, receipts and smart prefill."),
 ]
 
 func drawText(_ s: String, font: NSFont, color: NSColor, topY: Double, height: Double, tracking: Double = 0) {
