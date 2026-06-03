@@ -1,0 +1,31 @@
+{
+  "identifier" : "GARAGELY_SK",
+  "nonRenewingSubscriptions" : [],
+  "products" : [
+    {
+      "displayPrice" : "5.99",
+      "familyShareable" : false,
+      "internalID" : "PRO0000001",
+      "localizations" : [
+        {
+          "description" : "Unlock unlimited vehicles, full spend analytics, CSV & PDF export, iCloud sync, custom reminders and alternate app icons. One payment, yours forever.",
+          "displayName" : "Garagely Pro",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.duolaameng.garagely.pro",
+      "referenceName" : "Garagely Pro",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "GARAGELY",
+    "_developerTeamID" : "",
+    "_failTransactionsEnabled" : false
+  },
+  "subscriptionGroups" : [],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

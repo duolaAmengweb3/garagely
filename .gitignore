@@ -1,0 +1,8 @@
+build/
+Garagely.xcodeproj/
+DerivedData/
+*.xcuserstate
+.DS_Store
+._*
+brand/shots/
+shots/
